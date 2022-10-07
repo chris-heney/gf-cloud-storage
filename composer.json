@@ -1,0 +1,12 @@
+{
+    "name": "chris-heney/gf-cloud-storage",
+    "description": "Integration between Gravity Form Entries and NextCloud.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Chris Heney",
+            "email": "chris.heney@gmail.com"
+        }
+    ],
+    "require": {}
+}
