@@ -69,7 +69,7 @@ class GFCloudStorage extends GFFeedAddOn {
 		$username = GFCommon::replace_variables($feed['meta']['storage_username'], $form, $entry);
 		$password = GFCommon::replace_variables($feed['meta']['storage_password'], $form, $entry);
 		$folder   = GFCommon::replace_variables($feed['meta']['storage_folder'], $form, $entry);
-		$filename = GFCommon::replace_variables($feed['meta']['storage_filename'], $form, $entry) . '-' . $entry['id'] . '.html';
+		$filename = sanitize_file_name(GFCommon::replace_variables($feed['meta']['storage_filename'], $form, $entry) . '-' . $entry['id'] . '.html');
 		$filehead = GFCommon::replace_variables($feed['meta']['storage_fileheader'], $form, $entry, false, true, false);
 		$filedata = GFCommon::replace_variables('{all_fields}', $form, $entry, false, true, false);
 		$filefoot = GFCommon::replace_variables($feed['meta']['storage_filefooter'], $form, $entry, false, true, false);
