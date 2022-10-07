@@ -218,15 +218,19 @@ class GFCloudStorage extends GFFeedAddOn {
 	 * @return bool
 	 */
 	public function can_create_feed() {
-
-		// Get the plugin settings.
-		$settings = $this->get_plugin_settings();
-
-		// Access a specific setting e.g. an api key
-		$key = rgar( $settings, 'apiKey' );
-
 		return true;
 	}
+
+	/**
+     * @see   parent
+	 * @see   credit: [Heroicons](https://heroicons.com/)
+     *
+     * @since 1.6.0
+     */
+    public function get_menu_icon() {
+		$icon = file_get_contents(plugin_dir_path( __FILE__) . 'img/icon.svg' );
+        return apply_filters('cloud_storage_icon', $icon, 1 );
+    }
 
 	// This private function is what makes it "nextcloud" - therefore we do not need options like
 	// endpoint ... we should prolly have "domain" tho
