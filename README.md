@@ -22,3 +22,4 @@ Gravity Forms Cloud Storage started with NextCloud, but with the plan to scale t
     - Settings Field: API Key
     - Settings Field: Google Service Account
   - One Drive
+  - AWS S3 Buckets
