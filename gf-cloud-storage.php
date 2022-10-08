@@ -9,7 +9,7 @@ Requires at least: 4.0
 Requires PHP: 7.4
 Author: Chris Heney
 Author URI: https://chrisheney.com
-Text Domain: gfcs
+Text Domain: gf_cloudstorage
 
 ------------------------------------------------------------------------
 Copyright 2009-2022 Expert Overflow, LLC
