@@ -13,8 +13,8 @@ class GFCloudStorage extends GFFeedAddOn {
 
 	protected $_version = GF_CLOUD_STORAGE_VERSION;
 	protected $_min_gravityforms_version = '1.9.16';
-	protected $_slug = 'gf-cloud-storage';
-	protected $_path = 'gf-cloud-storage/gf-cloud-storage.php';
+	protected $_slug = 'gf-roadie';
+	protected $_path = 'gf-roadie/gf-roadie.php';
 	protected $_full_path = __FILE__;
 	protected $_title = 'Gravity Forms Cloud Storage';
 	protected $_short_title = 'Cloud Storage';

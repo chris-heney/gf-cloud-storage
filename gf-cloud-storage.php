@@ -15,9 +15,6 @@ Text Domain: gf_cloudstorage
 Copyright 2009-2022 Expert Overflow, LLC
 */
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 define( 'GF_CLOUD_STORAGE_VERSION', '2.0' );
 
 add_action( 'gform_loaded', array( 'GF_Cloud_Storage_Bootstrap', 'load' ), 5 );
@@ -30,7 +27,7 @@ class GF_Cloud_Storage_Bootstrap {
 			return;
 		}
 
-		require_once( 'class-gf-cloud-storage.php' );
+		require_once( 'class-gf-roadie.php' );
 
 		GFAddOn::register( 'GFCloudStorage' );
 	}
